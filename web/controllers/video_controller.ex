@@ -13,6 +13,8 @@ defmodule Rumbl.VideoController do
   end
 
   def new(conn, _params, user) do
+    #require IEx
+    #IEx.pry
     changeset =
       user
       |> build_assoc(:videos)
