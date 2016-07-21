@@ -59,7 +59,7 @@ defmodule Rumbl.Web do
   def router do
     quote do
       use Phoenix.Router
-      
+
       import Rumbl.Auth, only: [authenticate_user: 2] # New import
     end
   end
