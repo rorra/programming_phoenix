@@ -13,6 +13,7 @@ defmodule Rumbl do
       supervisor(Rumbl.Repo, []),
       # Here you could define other workers and supervisors as children
       # worker(Rumbl.Worker, [arg1, arg2, arg3]),
+      supervisor(Rumbl.InfoSys.Supervisor, []), # new supervisor
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
